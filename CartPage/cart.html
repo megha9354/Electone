@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+      <link rel="stylesheet" href="cart.css">
+      <link rel="stylesheet" href="../component/navbar.css">
+      <script src="https://kit.fontawesome.com/22f5e07808.js" crossorigin="anonymous"></script>
+</head>
+
+  
+<body>
+  <div id="my-nav">
+
+  </div>
+
+  <div id="Logo">
+    <br>
+    <h1 id="head">Your Cart</h1>
+  </div>
+
+  <div id="parent">
+
+  </div>
+  <div id="child-Price">
+    <h3>SUBTOTAL</h3>
+    <h3 id="subtotal"></h3>
+  </div>
+  <p>Shipping, taxes, and discounts codes calculated at checkout.</p>
+  <div id="checkOut">
+  <button id="check-out-btn">CHECK OUT</button>
+  </div>   
+                    
+</body>
+<script type="module">
+  import navbar from '../component/navbar.js'
+  document.getElementById("my-nav").innerHTML = navbar();
+</script>
+<script src="cart.js"></script>
+</html>

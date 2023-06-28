@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electon | Laptop</title>
+    <script src="https://kit.fontawesome.com/22f5e07808.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../component/navbar.css">
+    <link rel="stylesheet" href="../component/footer.css">
+    <link rel="stylesheet" href="laptop.css">
+</head>
+<body>
+    <div id="my-nav">
+
+    </div>
+
+    <div id="middleSection">
+        <div id="showCase">
+
+        </div>
+        <div id="myproduct">
+
+        </div>
+    </div>
+
+    <div id="myfooter">
+
+    </div>
+    
+</body>
+        <script type="module">
+            import navbar from '../component/navbar.js'
+            import {fetchedData,displayData,searchProd,fetchedlth,fetchedhtl} from './laptop.js'
+            import sideBar from './sidePart.js'
+            import footer from '../component/footer.js'
+
+            document.getElementById("my-nav").innerHTML = navbar();
+            document.getElementById("showCase").innerHTML = sideBar();
+            document.getElementById("myfooter").innerHTML = footer();
+            fetchedData();
+            searchProd()
+
+            const asc = document.getElementById("lth")
+            asc.addEventListener("change", () =>{
+                console.log("checking",asc.checked);
+                if(asc.checked){
+                    fetchedlth();
+                }
+                 else{
+                     fetchedData();
+                 }
+            })
+            const desc = document.getElementById("htl")
+            desc.addEventListener("change", () =>{
+                console.log("checking",desc.checked);
+                if(desc.checked){
+                    fetchedhtl();
+                }
+                 else{
+                     fetchedData();
+                 }
+            })
+        </script>
+
+        
+</html>

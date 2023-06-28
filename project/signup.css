@@ -1,0 +1,240 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+body {
+    background-color:aqua;
+    /* background-image: linear-gradient(to top, rgba(240, 207, 190, 0.698), rgba(248, 248, 248, 0.93)); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.main {
+   
+    display: flex;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    margin-top: 85px;
+}
+/* .form_main{
+   
+    border: 1px solid black;
+    width: 250px;
+    
+} */
+.sign_up{
+    text-align: center;
+    padding: 2px 0px 25px 0px;
+}
+
+.signi {
+     border: 1px solid black; 
+    width: 40%;
+    height: auto;
+    padding: 5%;
+    padding-top: -100px;
+    margin-top: -50px;
+    text-align: center;
+}
+
+.signi>img {
+    width: 80%;
+    margin-left: 10%;
+}
+
+form {
+    border: none;
+    border-radius: 15px;
+    margin: 50px;
+    color: #333333;
+    width: 30%;
+    height: auto;
+    justify-content: center;
+    
+    padding: 40px;
+    text-align: left;
+    
+    background-color: #c5e2ed;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 0 auto;
+}
+
+
+#phone{
+    margin-top: -5px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+   /* display: inline-block;
+    margin-left: 20px;
+    width: 80%;
+    margin: auto;*/
+
+}
+
+/* h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: montserrat-bold, sans-serif;
+    align-items: center;
+    justify-content: center;
+} */
+
+h3 {
+    color: #333333;
+    margin-left: 10px;
+    margin-bottom: 35px;
+    margin-top: 15px;
+    font-family: montserrat-bold, sans-serif;
+    text-align: left;
+    font-size: 18px;
+    margin: 0 0 20px;
+    color: #333;
+}
+
+input {
+    width: 99%;
+    display: block;
+    padding: 20px 0px 0px;
+
+}
+
+
+#btn {
+    /* margin-left: 55px;
+    margin-right: 55px; */
+    margin: 20px auto;
+    display: block;
+    margin-top: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+
+    width: 70%;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+    background-color: #0b6c1d;
+    border: none;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+   
+}
+h3{
+    text-align: center;
+}
+
+.sign {
+    /* border: 1px solid red; */
+    margin: 10px;
+}
+
+#bar {
+    font-size: large;
+    text-align: left;
+    display: block;
+    border: 1px solid transparent;
+    width: 95%;
+    margin-bottom: 0px;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #bcbcbc;
+    outline: none;
+    background: none;
+    box-shadow: none;
+   /* -webkit-appearance: none;*/
+    line-height: normal;
+}
+
+#nam {
+    font-size: large;
+    text-align: left;
+    display: block;
+    border: 1px solid transparent;
+    width: 95%;
+    margin-bottom: 0px;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #bcbcbc;
+    outline: none;
+    background: none;
+    box-shadow: none;
+    /*-webkit-appearance: none;*/
+    line-height: normal;
+}
+#password {
+    font-size: large;
+    text-align: left;
+    display: block;
+    border: 1px solid transparent;
+    width: 95%;
+    margin-bottom: 0px;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #bcbcbc;
+    outline: none;
+    background: none;
+    box-shadow: none;
+    /*-webkit-appearance: none;*/
+    line-height: normal;
+}
+#mbl {
+   /* font-size: large;
+    text-align: left;
+    display: block;
+    width: auto;
+    margin-bottom: 0px;
+    padding: 10px;
+    background-color: white;
+    outline: none;
+    background: none;
+    box-shadow: none;
+    line-height: normal;
+    margin: auto;*/
+
+  font-size: large;
+  text-align: left;
+  display: block;
+  border: 1px solid transparent;
+  width: 60%;
+  margin-bottom: 0px;
+  padding: 10px;
+  background-color: white;
+  outline: none;
+  background: none;
+  box-shadow: none;
+  line-height: normal;
+ /* -webkit-appearance: none;*/
+  display: inline-block;
+}
+#email {
+    font-size: large;
+    text-align: left;
+    display: block;
+    border: 1px solid transparent;
+    width: 95%;
+    margin-bottom: 0px;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #bcbcbc;
+    outline: none;
+    background: none;
+    box-shadow: none;
+   /* -webkit-appearance: none;*/
+    line-height: normal;
+}
+label {
+    align-items: center;
+    font-size: 18px;
+    position: absolute; 
+    color: #766f6f ;
+}
+
+p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+    

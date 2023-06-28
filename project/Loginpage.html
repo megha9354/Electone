@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Verify with OTP</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			background-color: #f1f1f1;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		
+		.container {
+			background-color:aqua;
+			padding: 20px;
+			max-width: 800px;
+            height:200px;
+			text-align: center;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px #ccc;
+            margin-top:200px;
+            margin-left:250px;
+		}
+
+		input[type="text"] {
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			margin: 10px 0;
+			width: 200px;
+			box-sizing: border-box;
+			font-size: 16px;
+		}
+
+		input[type="submit"] {
+			background-color: grey;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+            width:200px;
+		}
+
+		input[type="submit"]:hover {
+			background-color: grey;
+		}
+
+        .alert {
+          background-color: #4CAF50; 
+          color: yellow; 
+          border-radius: 10px; 
+          margin-top: 30px; 
+          text-align: center; 
+          font-size:30px;
+          align-items: center;
+          padding:20px;
+        }
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2>Verify OTP</h2>
+		<p>A One Time Password (OTP) has been sent to your registered Mobile No</p>
+		<form>
+			<input type="text" id="otp" name="otp" placeholder="Enter OTP"><br/>
+			<input type="submit" value="LOGIN">
+		</form>
+	</div>
+	<script>
+
+
+
+		const loginButton = document.querySelector('input[type="submit"]');
+
+		// add a click event listener to the button
+		loginButton.addEventListener('click', function(event) {
+			// prevent the form from being submitted
+			event.preventDefault();
+  
+			// get the OTP input value
+			const otpValue = document.getElementById('otp').value;
+
+			// check if the OTP is a 6-digit number
+			if (otpValue.length !== 6 || isNaN(otpValue)) {
+				alert('Please enter a valid 6-digit OTP');
+				return;
+			}
+
+			// if the OTP is valid, show a success message
+			const successMessage = document.createElement('div');
+			successMessage.classList.add('alert');
+			successMessage.textContent = 'Login Successful !! Happy Shopping';
+			window.location.href = '../mainpage/index.html';
+			document.body.appendChild(successMessage);
+		});
+	</script>
+</body>
+</html>

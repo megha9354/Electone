@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css" />
+    <link rel="stylesheet" href="iti/css/intlTelInput.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css" />
+    <link rel="stylesheet" href="../component/navbar.css"/>
+</head>
+<body>
+   
+  
+        <form class="form_main">
+            <h1 class="sign_up">Sign Up</h1>
+            <h3>Hi buddy, let's get started with the The 'Electon'</h3>
+           
+            <div class="sign">
+                <label for="name">Name</label><br>
+                <input id="nam" type="text" />
+            </div>
+           
+            <div class="sign">
+             <label for="phone">Mobile</label>
+             <input type="tel" id="phone" name="phone" placeholder="Mobile" required>
+            <div class="iti__flag-container">
+             <div id="flag" class="iti__selected-flag"></div>
+            </div>
+            </div>
+                
+            <div class="sign">
+                <label for="email">Email Id</label><br>
+                <input id="email" type="email" />
+            </div>
+            <div class="sign">
+                <label for="password">Password</label><br>
+                <input id="password" type="password" />
+            </div>
+            <div class="sign">
+                <div class="checkbox-container">
+                  
+                  </div>
+            </div>
+            <div class="sign">
+                <button id="btn">PROCEED</button>
+            </div>
+        </form>
+    </div>
+    </body>
+    <script src="signup.js"></script>
+        <script src="iti/js/intlTelInput.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    
+      <script>
+      let input = document.querySelector("#phone");
+      let itisi = window.intlTelInput(input, {
+        preferredCountries: ["in"],
+        separateDialCode: true,
+        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+      });
+      
+      let userMobile = iti.getNumber(intlTelInputUtils.numberFormat.E164);
+      
+      // Initialize the phone input field with the intlTelInput plugin
+      var phoneInput = document.querySelector("#phone");
+      var itis = window.intlTelInput(phoneInput, {
+        preferredCountries: ['in'],
+        separateDialCode: true,
+        utilsScript: "iti/js/utils.js"
+      });
+      </script>
+    
+    </html>

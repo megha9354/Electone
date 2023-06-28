@@ -1,0 +1,60 @@
+#middleSection{
+    display: flex;
+    gap: 2%;
+}
+
+#myproduct{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3%;
+    margin: 2%;
+}
+#box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#box:hover{
+    transform: scale(1.1);
+}
+#imagediv{
+    width: 70%;
+    
+}
+#laptop-img{
+    width: 100%;
+}
+.laptop-title{
+    color: rgb(48, 47, 47);
+}
+#showCase{
+    margin: 2%;
+}
+#sideBar{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 150px;
+}
+#myfooter{
+    margin-top: 15%;
+}
+
+@media screen and (min-width:700px) and (max-width:950px) {
+    #myproduct{
+        grid-template-columns: repeat(2,1fr);
+        gap: 5%; 
+    }
+    #myfooter{
+        margin-top: 70%;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:700px) {
+    #myproduct{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #myfooter{
+        display: none;
+    }
+
+}

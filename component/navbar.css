@@ -1,0 +1,197 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#upper-of-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+
+#upper-of-nav > div{
+    margin: 0px 50px;
+}
+
+#upper-nav-right{
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#upper-nav-right  div{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#location{
+    margin-left: -20%;
+}
+#nav-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(0,63,98);
+    color: aliceblue;
+    height: 60px;
+}
+
+#nav-1 div{
+    display: flex;
+    align-items: center;
+}
+
+#leftPart,#rightPart{
+    margin: 0px 30px;
+}
+#bolt-logo{
+    color: rgb(237,165,21);
+}
+#search-btn{
+    height: 35px;
+    border-radius: 10px;
+    width: 100px;
+    margin-left: -20px;
+    color: aliceblue;
+    background: rgb(237,165,21);
+}
+
+#search-inp{
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+#second{
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#second p a,#second a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#nav-2{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background: rgb(244,244,244);
+}
+
+#categories ul{
+    display: inline-flex;
+    list-style: none;
+}
+#categories ul li{
+    width: 130px;
+}
+#categories ul li a{
+    text-decoration: none;
+    color: #000;
+}
+#categories ul li a:hover{
+    background:rgb(0,63,98);
+    color: white;
+}
+.newNav{
+    margin-left: -20px;
+}
+.sub-menu{
+    display: none;
+}
+#categories ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background: rgb(244,244,244);
+}
+#categories ul li:hover .sub-menu ul{
+    display: block;
+    margin: 10px;
+}
+#categories ul li:hover .sub-menu ul li{
+    width: 100px;
+    padding: 10px;
+    border-bottom: 1px solid;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+#categories ul li:hover .sub-menu ul li:last-child{
+    border-bottom: none;
+}
+#free-return{
+    margin-right: 20px;
+}
+
+#bars{
+    display: none;
+}
+
+
+
+@media screen and (min-width:500px) and (max-width:768px){
+    #upper-nav-right{
+        width: 35%;
+    }
+    #search-inp{
+        width: 180px;
+    }
+    #search-btn{
+        width: 80px; 
+        height: 33px;
+    }
+    #second{
+        width: 35%;
+    }
+    #categories ul li{
+        width: 90px;
+    }
+}
+
+@media screen and (min-width:0px) and (max-width:499px){
+    #upper-of-nav{
+        display: none;
+    }
+    #nav-1{
+        height: 80px;
+    }
+    #free-return{
+        display: none;
+    }
+    #nav-2{
+        display: none;
+    }
+    #first{
+        display: flex;
+        flex-direction: column;
+        height: 60px;
+    }
+    #search-inp{
+        width: 100%;
+        height: 20px;
+        margin-left: 15px;
+        margin-top: 5px
+    }
+    #search-btn{
+        width: 70px; 
+        height: 23px;
+        margin-top: 5px;
+        
+    }
+    #nav-1 #second{
+        display: none;
+    }
+    #bars{
+        display: block;
+        font-size: x-large;
+        margin-right: 5px;
+    }
+    
+    
+    
+}

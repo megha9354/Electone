@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Login/Email</title>
+        <link rel="stylesheet" href="email.css" />
+        <link rel="stylesheet" href="../component/navbar.css"/>
+    </head>
+    <body>
+      <body>
+        <div id="my-nav"> </div>
+    
+        <div id="bottom"> </div>
+    
+    </body>
+    <script type="module">
+        import navbar from '../component/navbar.js'
+        
+        document.getElementById("my-nav").innerHTML = navbar();
+    
+        
+    </script>
+
+      <div class="container">
+    <div class="login-box">
+      <h1>Log in to your account</h1>
+      <form>
+        <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <div class="password-wrapper">
+            <input type="password" id="password" name="password" required>
+            <i class="far fa-eye" id="togglePassword"></i>
+          </div>
+        </div>
+        <div class="form-group">
+          <a href="forgotpassword.html" class="forgot-password">Forgot Password?</a>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="login-btn">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+<script src="email.js"  type="module"></script>
+  </html>
+
+

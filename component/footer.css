@@ -1,0 +1,66 @@
+.footer_total{
+    padding: 20px;
+    background-color: rgb(160, 207, 226);
+}
+.footer_lower_part{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.Subscribe{
+    padding: 20px;
+    color: rgb(7, 7, 123);
+}
+.column1{
+    margin-left: 10px;
+    display: grid;
+}
+.logo{
+    height: 3%;
+    width: 3%;
+    display: flex;
+    /* margin-right: -95px; */
+    /* justify-content: space-between; */
+}
+
+.footer_upper{
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+    margin: 25px;
+    margin-top: 25px;
+}
+.placeholder {
+    margin-top: 15px;
+    border-radius: 15px;
+    border: none;
+    height:35px;
+    width: 250px;
+    color: white;
+    background-color: orange;
+}
+.white_box{
+    display: flex;
+    
+    justify-content: space-around;
+}
+.place{
+    padding-top: 17px;
+}
+.contact{
+    padding-top: 5px;
+}
+.care{
+    padding-top: 17px;
+    display: flex;
+}
+/* .headphone {
+
+} */
+.logo1{
+    border: 2px solid gray;
+
+}
+/* .column2_list{
+    margin-left: -10 px;
+    } */

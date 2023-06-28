@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electon | details</title>
+    <script src="https://kit.fontawesome.com/22f5e07808.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../component/navbar.css">
+    <link rel="stylesheet" href="../component/footer.css">
+    <link rel="stylesheet" href="./details.css">
+</head>
+<body>
+    <div id="my-nav">
+
+    </div>
+
+    <div id="bottom">
+        
+    </div>
+
+    <div id="myfooter">
+
+    </div>
+
+</body>
+<script type="module">
+    import navbar from '../component/navbar.js'
+    import {fetchedDetails,displayData,searchProd} from './detailscamera.js';
+    import footer from '../component/footer.js'
+    
+
+    document.getElementById("my-nav").innerHTML = navbar();
+    document.getElementById("myfooter").innerHTML = footer();
+
+    fetchedDetails();
+    searchProd();
+    
+</script>
+</html>

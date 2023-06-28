@@ -1,0 +1,53 @@
+#bottom{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#upper-div{
+    display: flex;
+    gap: 5%;
+    
+}
+
+#detail-div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-top: 10%;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+}
+#image-div{
+  width: 40%;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+}
+#myImage{
+    width: 100%;
+}
+#detail-div{
+    width: 40%;
+}
+#cart-button{
+    height: 40px;
+    border-radius: 20px;
+    background: rgb(0,63,98);
+    color: aliceblue;
+}
+
+#bottom-div{
+    margin-top: 5%;
+}
+#myfooter{
+    margin-top: 10%;
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+    #upper-div{
+        flex-direction: column;  
+    }
+    #image-div{
+        width: 100%;
+    }
+
+    #detail-div{
+        width: 100%;
+    }
+}

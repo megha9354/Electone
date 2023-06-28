@@ -1,0 +1,57 @@
+#Logo {
+    display: block;
+    text-align: center;
+    }
+    #Logo > img{
+      height: 40px;
+    }
+    #parent > div{
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      width: 70%;
+      display: flex;
+      column-gap: 25%;
+    }
+    #parent{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 20%;
+    }
+    #child-Price{
+      display: flex;
+      justify-content: space-around;
+    }
+    #child-Price + p{
+      display: flex;
+      justify-content: center;
+    }
+    #checkOut{
+      display: block;
+      text-align: center;
+    }
+    #remove-btn{
+      background: rgb(0,63,98);
+      color: aliceblue;
+      margin-top: 20px;
+      height: 30px;
+      width: 150px;
+      border-radius: 20px;
+    }
+    #check-out-btn{
+        background: rgb(0,63,98);
+        color: aliceblue;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 200px;
+        height: 20px;
+    }
+    #parahover:hover{
+      text-decoration: underline;
+    }
+    #imghover{
+        width: 20%;
+    }
+    #div-box{
+        margin-top: 2%;
+    }
+    
