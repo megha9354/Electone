@@ -1,4 +1,8 @@
+// import navbar from "../component/navbar.js";
+// let navbarcomponent = document.getElementById("nav");
+// navbarcomponent.innerHTML = navbar();
 
+// bannerImage bannerTitle bannerSubTitle
 var bannerArr = [
   {
     image:
@@ -56,100 +60,7 @@ setInterval(function () {
   bannerVar++;
 }, 2000);
 
-// arrow main container
-var arrowArr = [
-  {
-    image: "https://cdn.ttgtmedia.com/rms/onlineimages/hp_elitebook_mobile.jpg",
-    title: "Desktop & laptop",
-    sub_title: "6 items",
-  },
-  {
-    image:
-      "https://m.media-amazon.com/images/I/81TiRgFBBtL._AC_UY327_FMwebp_QL65_.jpg",
-    title: "Speaker",
-    sub_title: "6 items",
-  },
-  {
-    image:
-      "https://m.media-amazon.com/images/I/41J1kYfM6PL._AC_UY327_FMwebp_QL65_.jpg",
-    title: "DSLR cameras",
-    sub_title: "6 items",
-  },
-  {
-    image:
-      "https://m.media-amazon.com/images/I/41J1kYfM6PL._AC_UY327_FMwebp_QL65_.jpg",
-    title: "DSLR cameras",
-    sub_title: "6 items",
-  },
-];
-
-let arrowFir = 0;
-let arrowSec = 1;
-let arrowThi = 2;
-
-let arrowBackButton = document.getElementById("arrowBackButton");
-arrowBackButton.addEventListener("click", backFunction);
-let arrowForwardButton = document.getElementById("arrowForwardButton");
-arrowForwardButton.addEventListener("click", forwardFunction);
-//
-let arrowFirst = document.getElementById("arrowFirst");
-let arrowFirstText = document.getElementById("arrowFirstText");
-let arrowFirstSubText = document.getElementById("arrowFirstSubText");
-//
-let arrowSecImageDiv = document.getElementById("arrowSecImageDiv");
-let arrowSecText = document.getElementById("arrowSecText");
-let arrowSecSubText = document.getElementById("arrowSecSubText");
-//
-let arrowThiImageDiv = document.getElementById("arrowThiImageDiv");
-let arrowThiText = document.getElementById("arrowThiText");
-let arrowThiSubText = document.getElementById("arrowThiSubText");
-
-arrowFirst.src = arrowArr[arrowFir].image;
-arrowFirstText.textContent = arrowArr[arrowFir].title;
-arrowFirstSubText.textContent = arrowArr[arrowFir].sub_title;
-
-arrowSecImageDiv.src = arrowArr[arrowSec].image;
-arrowSecText.textContent = arrowArr[arrowSec].title;
-arrowSecSubText.textContent = arrowArr[arrowSec].sub_title;
-
-arrowThiImageDiv.src = arrowArr[arrowThi].image;
-arrowThiText.textContent = arrowArr[arrowThi].title;
-arrowThiSubText.textContent = arrowArr[arrowThi].sub_title;
-
-function showThreeImage() {
-  arrowFirst.src = arrowArr[arrowFir].image;
-  arrowFirstText.textContent = arrowArr[arrowFir].title;
-  arrowFirstSubText.textContent = arrowArr[arrowFir].sub_title;
-
-  arrowSecImageDiv.src = arrowArr[arrowSec].image;
-  arrowSecText.textContent = arrowArr[arrowSec].title;
-  arrowSecSubText.textContent = arrowArr[arrowSec].sub_title;
-
-  arrowThiImageDiv.src = arrowArr[arrowThi].image;
-  arrowThiText.textContent = arrowArr[arrowThi].title;
-  arrowThiSubText.textContent = arrowArr[arrowThi].sub_title;
-}
-
-function backFunction() {
-  arrowFir--;
-  arrowSec--;
-  arrowThi--;
-
-  if (arrowFir < 0) {
-    arrowFir = 0;
-    arrowSec = 1;
-    arrowThi = 2;
-  } else {
-    showThreeImage();
-  }
-}
-
-function forwardFunction() {
-  console.log(arrowFir, arrowSec, arrowThi);
-}
-
 //  three image
-
 var threImageArr = [
   {
     image: "https://m.media-amazon.com/images/I/41mullmNHYL._AC_SR480,480_.jpg",
@@ -206,7 +117,6 @@ setInterval(function () {
 }, 2000);
 
 //  latest
-
 var latestArr = [
   {
     image:
@@ -288,53 +198,17 @@ var testimonailArr = [
   },
   {
     image: "https://randomuser.me/api/portraits/men/69.jpg",
-    title: "Savannah Williams",
+    title: "Surya Kumar",
   },
 ];
 
 var testFirstVar = 0;
-var testsecondVar = 1;
-var testthirdVar = 2;
-
-let firsttestimonail = document.getElementById("firsttestimonail");
-let firsttestimonailText = document.getElementById("latestFirstHeading");
-
-let sectestimonail = document.getElementById("sectestimonail");
-let sectestimonailText = document.getElementById("sectestimonailText");
-
-let thitestimonail = document.getElementById("thitestimonail");
-let thitestimonailText = document.getElementById("thitestimonailText");
-
 let testimonialDots = document.getElementById("testimonialDots");
-
 latestDots.children[0].style.color = "orange";
-firsttestimonail.src = testimonailArr[testFirstVar].image;
-firsttestimonailText.textContent = testimonailArr[testFirstVar].title;
-//
-sectestimonail.src = testimonailArr[testsecondVar].image;
-sectestimonailText.textContent = testimonailArr[testsecondVar].title;
-//
-thitestimonail.src = testimonailArr[testthirdVar].image;
-thitestimonailText.textContent = testimonailArr[testthirdVar].title;
-
 setInterval(function () {
   if (testFirstVar == testimonailArr.length) {
     testFirstVar = 0;
   }
-  if (testsecondVar == testimonailArr.length) {
-    testsecondVar = 0;
-  }
-  if (testthirdVar == testimonailArr.length) {
-    testthirdVar = 0;
-  }
-  firsttestimonail.src = testimonailArr[testFirstVar].image;
-  firsttestimonailText.textContent = testimonailArr[testFirstVar].title;
-  //
-  sectestimonail.src = testimonailArr[testsecondVar].image;
-  sectestimonailText.textContent = testimonailArr[testsecondVar].title;
-  //
-  thitestimonail.src = testimonailArr[testthirdVar].image;
-  thitestimonailText.textContent = testimonailArr[testthirdVar].title;
 
   if (testFirstVar + 1 === 1) {
     testimonialDots.children[0].style.color = "orange";
@@ -353,6 +227,4 @@ setInterval(function () {
   }
 
   testFirstVar++;
-  testsecondVar++;
-  testthirdVar++;
 }, 2000);

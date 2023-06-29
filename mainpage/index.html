@@ -5,23 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="https://kit.fontawesome.com/22f5e07808.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+ 
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@100&display=swap"
       rel="stylesheet"
     />
+    <!-- <link rel="stylesheet" href="./Homepage.css" /> -->
     <link rel="stylesheet" href="./Homepage.css" />
     <link rel="stylesheet" href="../component/navbar.css" />
-   
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <script src="https://kit.fontawesome.com/22f5e07808.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/65a2b7e515.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <!--  navbar -->
-    <div id="my-nav">
-
-    </div>
-    
+    <div id="nav" class="navbar"></div>
+    <!-- Banner slide show -->
     <div class="bannerMainContainer">
       <div class="baneerTextMainContainer">
         <div class="baneerTextHeadingContainer">
@@ -52,26 +52,26 @@
     <!-- Arrow Slide show -->
     <div class="arrowMainContainer">
       <!-- https://static.thenounproject.com/png/251451-200.png   aage  -->
-      <div class="arrowBackButton">
+      <!-- <div class="arrowBackButton">
         <img
         id="arrowBackButton"
           src="https://static.thenounproject.com/png/251451-200.png"
           alt="backbutton"
         />
-      </div>
+      </div> -->
 
       <div class="arrowFirstContainer">
         <div  class="arrowFirstImageDiv">
           <img
           id="arrowFirst"
-           src=""
+           src="https://cdn.ttgtmedia.com/rms/onlineimages/hp_elitebook_mobile.jpg"
             alt="img"
           />
         </div>
         <div class="arrowFirstTextDiv">
-      <span  style="margin-top:1rem" id="arrowFirstText"></span>
+      <span  style="margin-top:1rem" id="arrowFirstText">Desktop & laptop</span>
           <br />
-        <span id="arrowFirstSubText"></span>
+        <span id="arrowFirstSubText">(6 items)</span>
         </div>
       </div>
 
@@ -79,14 +79,14 @@
         <div class="arrowFirstImageDiv">
           <img
           id="arrowSecImageDiv"
-            src=""
+            src="https://m.media-amazon.com/images/I/81TiRgFBBtL._AC_UY327_FMwebp_QL65_.jpg"
             alt="img"
           />
         </div>
         <div class="arrowFirstTextDiv">
-         <span style="margin-top:1rem" id="arrowSecText"></span>
+         <span style="margin-top:1rem" id="arrowSecText">Speaker</span>
           <br />
-          <span id="arrowSecSubText"></span>
+          <span id="arrowSecSubText">(6 items)</span>
         </div>
       </div>
 
@@ -94,25 +94,25 @@
         <div class="arrowFirstImageDiv">
           <img
           id="arrowThiImageDiv"
-           src=""
+           src="https://m.media-amazon.com/images/I/41J1kYfM6PL._AC_UY327_FMwebp_QL65_.jpg"
             alt="img"
           />
         </div>
         <div class="arrowFirstTextDiv">
-         <span  style="margin-top:1rem" id="arrowThiText"></span>
+         <span  style="margin-top:1rem" id="arrowThiText">DSLR cameras</span>
           <br />
-        <span id="arrowThiSubText"></span>
+        <span id="arrowThiSubText">(6 items)</span>
         </div>
       </div>
 
 
-      <div class="arrowBackButton">
+      <!-- <div class="arrowBackButton">
         <img
         id="arrowForwardButton"
           src=" https://img.freepik.com/free-icon/right-arrow_318-458184.jpg"
           alt="forwardbutton"
         />
-      </div>
+      </div> -->
     </div>
 
     <!--  product page -->
@@ -420,7 +420,7 @@
           <div class="textFirstImage">
             <img
             id="firsttestimonail"
-              src=""
+              src="https://bezyl.com/wp-content/uploads/2022/08/liz2-1-300x300.png"
               alt=""
             />
           </div>
@@ -440,11 +440,13 @@
           <div class="textFirstImage">
             <img
             id="sectestimonail"
-              src=""
+              src="https://bezyl.com/wp-content/uploads/2022/08/miguel-300x300.png"
               alt=""
             />
           </div>
-          <div id="sectestimonailText" class="textNameContainer"></div>
+          <div id="sectestimonailText" class="textNameContainer">
+            Esther Howard
+          </div>
         </div>
         <!--  -->
         <div class="textDescription">
@@ -462,11 +464,13 @@
           <div class="textFirstImage">
             <img
             id="thitestimonail"
-              src=""
+              src="https://bezyl.com/wp-content/uploads/2022/11/Ashley-Williams-headshot-1.png"
               alt=""
             />
           </div>
-          <div id="thitestimonailText"  class="textNameContainer"></div>
+          <div id="thitestimonailText"  class="textNameContainer">
+            Ashley Williams
+          </div>
         </div>
         <!--  -->
         <div class="textDescription">
@@ -540,15 +544,11 @@
     <!--  footer -->
     <div id="foot" class="footer"></div>
   </body>
-
-
-  <script type="module" src="./Homepage.js">
-    
-  </script>
-
   <script type="module">
     import navbar from "../component/navbar.js";
-    let navbarcomponent = document.getElementById("my-nav");
+    let navbarcomponent = document.getElementById("nav");
     navbarcomponent.innerHTML = navbar();
-  </script>
-</html>
+</script>
+  <!-- <script type="module" src="./Homepage.js"></script> -->
+  <script type="module" src="./index.js"></script>
+</html> 
